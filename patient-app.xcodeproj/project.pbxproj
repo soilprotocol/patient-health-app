@@ -8,20 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		4F1FB04E22A83BA600B1FF2D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1FB04D22A83BA600B1FF2D /* AppDelegate.swift */; };
-		4F1FB05022A83BA600B1FF2D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1FB04F22A83BA600B1FF2D /* ViewController.swift */; };
+		4F1FB05022A83BA600B1FF2D /* DataOverviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1FB04F22A83BA600B1FF2D /* DataOverviewViewController.swift */; };
 		4F1FB05322A83BA600B1FF2D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F1FB05122A83BA600B1FF2D /* Main.storyboard */; };
 		4F1FB05522A83BA700B1FF2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F1FB05422A83BA700B1FF2D /* Assets.xcassets */; };
 		4F1FB05822A83BA700B1FF2D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F1FB05622A83BA700B1FF2D /* LaunchScreen.storyboard */; };
+		4F1FB06022A847D800B1FF2D /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1FB05F22A847D800B1FF2D /* MenuTableViewController.swift */; };
+		4F1FB06822A84F3B00B1FF2D /* QRCodeScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1FB06722A84F3B00B1FF2D /* QRCodeScannerViewController.swift */; };
+		4F1FB06A22A85CF200B1FF2D /* SharingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1FB06922A85CF200B1FF2D /* SharingViewController.swift */; };
+		4F1FB07022A85D5600B1FF2D /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1FB06F22A85D5600B1FF2D /* HistoryViewController.swift */; };
+		4F1FB07322A87A3C00B1FF2D /* DataRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1FB07222A87A3C00B1FF2D /* DataRequestViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4F1FB04A22A83BA600B1FF2D /* patient-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "patient-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F1FB04D22A83BA600B1FF2D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4F1FB04F22A83BA600B1FF2D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4F1FB04F22A83BA600B1FF2D /* DataOverviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataOverviewViewController.swift; sourceTree = "<group>"; };
 		4F1FB05222A83BA600B1FF2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4F1FB05422A83BA700B1FF2D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4F1FB05722A83BA700B1FF2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4F1FB05922A83BA700B1FF2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4F1FB05F22A847D800B1FF2D /* MenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
+		4F1FB06722A84F3B00B1FF2D /* QRCodeScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeScannerViewController.swift; sourceTree = "<group>"; };
+		4F1FB06922A85CF200B1FF2D /* SharingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharingViewController.swift; sourceTree = "<group>"; };
+		4F1FB06F22A85D5600B1FF2D /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		4F1FB07222A87A3C00B1FF2D /* DataRequestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRequestViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +64,83 @@
 		4F1FB04C22A83BA600B1FF2D /* patient-app */ = {
 			isa = PBXGroup;
 			children = (
-				4F1FB04D22A83BA600B1FF2D /* AppDelegate.swift */,
-				4F1FB04F22A83BA600B1FF2D /* ViewController.swift */,
 				4F1FB05122A83BA600B1FF2D /* Main.storyboard */,
-				4F1FB05422A83BA700B1FF2D /* Assets.xcassets */,
-				4F1FB05622A83BA700B1FF2D /* LaunchScreen.storyboard */,
+				4F1FB04D22A83BA600B1FF2D /* AppDelegate.swift */,
+				4F1FB07122A85D6F00B1FF2D /* Main */,
+				4F1FB07422A87A4400B1FF2D /* DataRequest */,
+				4F1FB06322A84CE300B1FF2D /* Menu */,
+				4F1FB06422A84EDD00B1FF2D /* QRCodeScanner */,
+				4F1FB06222A84CCF00B1FF2D /* Resources */,
 				4F1FB05922A83BA700B1FF2D /* Info.plist */,
 			);
 			path = "patient-app";
+			sourceTree = "<group>";
+		};
+		4F1FB06122A84CBA00B1FF2D /* DataOverview */ = {
+			isa = PBXGroup;
+			children = (
+				4F1FB04F22A83BA600B1FF2D /* DataOverviewViewController.swift */,
+			);
+			path = DataOverview;
+			sourceTree = "<group>";
+		};
+		4F1FB06222A84CCF00B1FF2D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4F1FB05422A83BA700B1FF2D /* Assets.xcassets */,
+				4F1FB05622A83BA700B1FF2D /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4F1FB06322A84CE300B1FF2D /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				4F1FB05F22A847D800B1FF2D /* MenuTableViewController.swift */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		4F1FB06422A84EDD00B1FF2D /* QRCodeScanner */ = {
+			isa = PBXGroup;
+			children = (
+				4F1FB06722A84F3B00B1FF2D /* QRCodeScannerViewController.swift */,
+			);
+			path = QRCodeScanner;
+			sourceTree = "<group>";
+		};
+		4F1FB06B22A85CFE00B1FF2D /* Sharing */ = {
+			isa = PBXGroup;
+			children = (
+				4F1FB06922A85CF200B1FF2D /* SharingViewController.swift */,
+			);
+			path = Sharing;
+			sourceTree = "<group>";
+		};
+		4F1FB06E22A85D3A00B1FF2D /* History */ = {
+			isa = PBXGroup;
+			children = (
+				4F1FB06F22A85D5600B1FF2D /* HistoryViewController.swift */,
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
+		4F1FB07122A85D6F00B1FF2D /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				4F1FB06122A84CBA00B1FF2D /* DataOverview */,
+				4F1FB06B22A85CFE00B1FF2D /* Sharing */,
+				4F1FB06E22A85D3A00B1FF2D /* History */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		4F1FB07422A87A4400B1FF2D /* DataRequest */ = {
+			isa = PBXGroup;
+			children = (
+				4F1FB07222A87A3C00B1FF2D /* DataRequestViewController.swift */,
+			);
+			path = DataRequest;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +214,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4F1FB05022A83BA600B1FF2D /* ViewController.swift in Sources */,
+				4F1FB07322A87A3C00B1FF2D /* DataRequestViewController.swift in Sources */,
+				4F1FB05022A83BA600B1FF2D /* DataOverviewViewController.swift in Sources */,
+				4F1FB06822A84F3B00B1FF2D /* QRCodeScannerViewController.swift in Sources */,
 				4F1FB04E22A83BA600B1FF2D /* AppDelegate.swift in Sources */,
+				4F1FB07022A85D5600B1FF2D /* HistoryViewController.swift in Sources */,
+				4F1FB06022A847D800B1FF2D /* MenuTableViewController.swift in Sources */,
+				4F1FB06A22A85CF200B1FF2D /* SharingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
