@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -18,6 +18,11 @@
 		4F1FB07022A85D5600B1FF2D /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1FB06F22A85D5600B1FF2D /* HistoryViewController.swift */; };
 		4F1FB07322A87A3C00B1FF2D /* DataSharingRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1FB07222A87A3C00B1FF2D /* DataSharingRequestViewController.swift */; };
 		4F1FB07722A8842F00B1FF2D /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1FB07622A8842F00B1FF2D /* UIViewController+Extensions.swift */; };
+		4FE7AA4922A8D71700F47373 /* DBHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE7AA4722A8D71700F47373 /* DBHandler.swift */; };
+		4FE7AA4A22A8D71700F47373 /* HeathData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE7AA4822A8D71700F47373 /* HeathData.swift */; };
+		4FE7AA4C22A8D80900F47373 /* SharingEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE7AA4B22A8D80900F47373 /* SharingEvent.swift */; };
+		4FE7AA5022A8DF1800F47373 /* SharingEventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE7AA4F22A8DF1800F47373 /* SharingEventCell.swift */; };
+		8A3B0D89C10FAFA0705443E4 /* Pods_patient_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB1A66AFFD7D0131C0CEF220 /* Pods_patient_app.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +39,13 @@
 		4F1FB06F22A85D5600B1FF2D /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		4F1FB07222A87A3C00B1FF2D /* DataSharingRequestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSharingRequestViewController.swift; sourceTree = "<group>"; };
 		4F1FB07622A8842F00B1FF2D /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		4FE7AA4722A8D71700F47373 /* DBHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBHandler.swift; sourceTree = "<group>"; };
+		4FE7AA4822A8D71700F47373 /* HeathData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeathData.swift; sourceTree = "<group>"; };
+		4FE7AA4B22A8D80900F47373 /* SharingEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharingEvent.swift; sourceTree = "<group>"; };
+		4FE7AA4F22A8DF1800F47373 /* SharingEventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharingEventCell.swift; sourceTree = "<group>"; };
+		624CF34F2BE15D6D95075EA9 /* Pods-patient-app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-patient-app.release.xcconfig"; path = "Target Support Files/Pods-patient-app/Pods-patient-app.release.xcconfig"; sourceTree = "<group>"; };
+		B490E18BE030FC3EDC574288 /* Pods-patient-app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-patient-app.debug.xcconfig"; path = "Target Support Files/Pods-patient-app/Pods-patient-app.debug.xcconfig"; sourceTree = "<group>"; };
+		CB1A66AFFD7D0131C0CEF220 /* Pods_patient_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_patient_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A3B0D89C10FAFA0705443E4 /* Pods_patient_app.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +65,8 @@
 			children = (
 				4F1FB04C22A83BA600B1FF2D /* patient-app */,
 				4F1FB04B22A83BA600B1FF2D /* Products */,
+				A986D6773B8B2F44A0230F16 /* Pods */,
+				4F85837CC4C827909B112534 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,18 +88,19 @@
 				4F1FB06322A84CE300B1FF2D /* Menu */,
 				4F1FB06422A84EDD00B1FF2D /* QRCodeScanner */,
 				4F1FB06222A84CCF00B1FF2D /* Resources */,
+				4FE7AA4622A8D71700F47373 /* Persistence */,
 				4F1FB07522A8842F00B1FF2D /* Extensions */,
 				4F1FB05922A83BA700B1FF2D /* Info.plist */,
 			);
 			path = "patient-app";
 			sourceTree = "<group>";
 		};
-		4F1FB06122A84CBA00B1FF2D /* DataOverview */ = {
+		4F1FB06122A84CBA00B1FF2D /* HealthData */ = {
 			isa = PBXGroup;
 			children = (
 				4F1FB04F22A83BA600B1FF2D /* DataOverviewViewController.swift */,
 			);
-			path = DataOverview;
+			path = HealthData;
 			sourceTree = "<group>";
 		};
 		4F1FB06222A84CCF00B1FF2D /* Resources */ = {
@@ -116,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				4F1FB06922A85CF200B1FF2D /* SharingViewController.swift */,
+				4FE7AA4F22A8DF1800F47373 /* SharingEventCell.swift */,
 			);
 			path = Sharing;
 			sourceTree = "<group>";
@@ -131,7 +148,7 @@
 		4F1FB07122A85D6F00B1FF2D /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				4F1FB06122A84CBA00B1FF2D /* DataOverview */,
+				4F1FB06122A84CBA00B1FF2D /* HealthData */,
 				4F1FB06B22A85CFE00B1FF2D /* Sharing */,
 				4F1FB06E22A85D3A00B1FF2D /* History */,
 			);
@@ -154,6 +171,33 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		4F85837CC4C827909B112534 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CB1A66AFFD7D0131C0CEF220 /* Pods_patient_app.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4FE7AA4622A8D71700F47373 /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				4FE7AA4722A8D71700F47373 /* DBHandler.swift */,
+				4FE7AA4822A8D71700F47373 /* HeathData.swift */,
+				4FE7AA4B22A8D80900F47373 /* SharingEvent.swift */,
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
+		A986D6773B8B2F44A0230F16 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B490E18BE030FC3EDC574288 /* Pods-patient-app.debug.xcconfig */,
+				624CF34F2BE15D6D95075EA9 /* Pods-patient-app.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -161,9 +205,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4F1FB05C22A83BA700B1FF2D /* Build configuration list for PBXNativeTarget "patient-app" */;
 			buildPhases = (
+				1A17BB5B5FCD37AB29539FBA /* [CP] Check Pods Manifest.lock */,
 				4F1FB04622A83BA600B1FF2D /* Sources */,
 				4F1FB04722A83BA600B1FF2D /* Frameworks */,
 				4F1FB04822A83BA600B1FF2D /* Resources */,
+				1C4A0961627A4DBEF7091B04 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -220,6 +266,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1A17BB5B5FCD37AB29539FBA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-patient-app-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1C4A0961627A4DBEF7091B04 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-patient-app/Pods-patient-app-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-patient-app/Pods-patient-app-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-patient-app/Pods-patient-app-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4F1FB04622A83BA600B1FF2D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -228,9 +316,13 @@
 				4F1FB07322A87A3C00B1FF2D /* DataSharingRequestViewController.swift in Sources */,
 				4F1FB05022A83BA600B1FF2D /* DataOverviewViewController.swift in Sources */,
 				4F1FB06822A84F3B00B1FF2D /* QRCodeScannerViewController.swift in Sources */,
+				4FE7AA4922A8D71700F47373 /* DBHandler.swift in Sources */,
 				4F1FB04E22A83BA600B1FF2D /* AppDelegate.swift in Sources */,
+				4FE7AA4A22A8D71700F47373 /* HeathData.swift in Sources */,
 				4F1FB07722A8842F00B1FF2D /* UIViewController+Extensions.swift in Sources */,
+				4FE7AA5022A8DF1800F47373 /* SharingEventCell.swift in Sources */,
 				4F1FB07022A85D5600B1FF2D /* HistoryViewController.swift in Sources */,
+				4FE7AA4C22A8D80900F47373 /* SharingEvent.swift in Sources */,
 				4F1FB06022A847D800B1FF2D /* MenuTableViewController.swift in Sources */,
 				4F1FB06A22A85CF200B1FF2D /* SharingViewController.swift in Sources */,
 			);
@@ -376,6 +468,7 @@
 		};
 		4F1FB05D22A83BA700B1FF2D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B490E18BE030FC3EDC574288 /* Pods-patient-app.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -394,6 +487,7 @@
 		};
 		4F1FB05E22A83BA700B1FF2D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 624CF34F2BE15D6D95075EA9 /* Pods-patient-app.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

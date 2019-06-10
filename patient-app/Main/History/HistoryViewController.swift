@@ -20,7 +20,7 @@ class HistoryViewController: UITableViewController {
         let nav = self.navigationController?.navigationBar
         nav?.barStyle = UIBarStyle.black
         nav?.tintColor = UIColor.yellow
-        nav?.topItem?.title = "Sharing History"
+        nav?.topItem?.title = "Freigabe Historie"
         
     }
 

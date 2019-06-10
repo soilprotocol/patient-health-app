@@ -13,6 +13,7 @@ class QRCodeScannerViewController: UIViewController {
     
     @IBOutlet var messageLabel:UILabel!
     
+    private let dbHandler = DBHandler.sharedInstance
     var isRequestShowing = false
     
     var captureSession = AVCaptureSession()
@@ -136,7 +137,7 @@ class QRCodeScannerViewController: UIViewController {
     func setRequestTitle() {
         requestLabelTitle = UILabel()
         requestLabelTitle.font =  UIFont(name: "Kailasa-Bold", size: 30)
-        requestLabelTitle.text = "Daten Zugruffsanfrage"
+        requestLabelTitle.text = "Daten Zugriffsanfrage"
         requestLabelTitle.translatesAutoresizingMaskIntoConstraints = false
         requestView.insertSubview(requestLabelTitle, at: 11)
         setupTitleConstraints()
@@ -276,7 +277,7 @@ class QRCodeScannerViewController: UIViewController {
         requestAcceptButton.backgroundColor = UIColor.green
         requestAcceptButton.layer.cornerRadius = 10
         requestAcceptButton.setTitleColor(UIColor.white, for: .normal)
-        requestAcceptButton?.setTitle("Accept", for: .normal)
+        requestAcceptButton?.setTitle("Akzeptieren", for: .normal)
         requestAcceptButton.addTarget(self, action: #selector(acceptRequest), for: .touchUpInside)
         requestAcceptButton.translatesAutoresizingMaskIntoConstraints = false
         requestView.insertSubview(requestAcceptButton, at: 11)
@@ -297,7 +298,7 @@ class QRCodeScannerViewController: UIViewController {
         requestDenyButton.layer.cornerRadius = 10
         requestDenyButton.backgroundColor = UIColor.red
         requestDenyButton.setTitleColor(UIColor.white, for: .normal)
-        requestDenyButton?.setTitle("Deny", for: .normal)
+        requestDenyButton?.setTitle("Verweigern", for: .normal)
         requestDenyButton.addTarget(self, action: #selector(denyRequest), for: .touchUpInside)
         requestDenyButton.translatesAutoresizingMaskIntoConstraints = false
         requestView.insertSubview(requestDenyButton, at: 11)
@@ -329,6 +330,7 @@ class QRCodeScannerViewController: UIViewController {
     
     @objc func acceptRequest() {
 //        dismissView()
+        dbHandler.createSharingEvent(text: "do it!")
         navigationController?.popViewController(animated: true)
 
     }

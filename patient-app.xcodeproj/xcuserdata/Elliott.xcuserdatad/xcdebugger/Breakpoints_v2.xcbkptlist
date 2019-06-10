@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "patient-app/QRCodeScanner/QRCodeScannerViewController.swift"
-            timestampString = "581489879.158734"
+            timestampString = "581506847.218484"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "62"
-            endingLineNumber = "62"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "patient-app/QRCodeScanner/QRCodeScannerViewController.swift"
-            timestampString = "581489879.15995"
+            timestampString = "581506847.2185659"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "321"
-            endingLineNumber = "321"
+            startingLineNumber = "322"
+            endingLineNumber = "322"
             landmarkName = "setView(view:)"
             landmarkType = "7">
          </BreakpointContent>
